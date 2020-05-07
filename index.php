@@ -3,7 +3,8 @@
         <head>
             <title>Facebook - entre ou Cadastre-se</title>
             <meta charset="utf-8"/>
-            <!--Aplicar as meta tags posteriormente-->            
+            <!--Aplicar as meta tags posteriormente-->
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">           
             <link rel="stylesheet" href="css/style.css">
         </head>
             <body>
@@ -61,49 +62,47 @@
                                     <input placeholder="Nova senha" type="password">
                                 </div><!--w100-->
 
-
-                                <div class="w100">
-                                    <h2>Data de nascimento</h2>
-                                    
-                                    <select name="nascimento-dia" class="nascimento">
-                                        <?php
-                                            for($i = 1; $i <= 31; $i++){
-                                        ?>
-                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                                        <?php } ?>
-                                    </select>
-                                    <select name="nascimento-mes" class="nascimento">
-                                        <!--Aplicar depois o PHP-->
-                                        <option value="0">Janeiro</option>
-                                    </select>
-                                    <select name="nascimento-ano" class="nascimento">
-                                        <?php
-                                            for($i = 1960; $i <= 2020; $i++){
-                                        ?>
-                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                                        <?php } ?>
-                                    </select>
-                                    <div class="clear"></div>
-                                </div><!--w100-->
                                 
-                                <div class="w100">
-                                    <div class="input-radio">
-                                        <input type="radio" name="sexo" value="masculino">
-                                        <h2>Masculino</h2>
-                                    </div><!--radio-->
-                                    <div class="input-radio">
-                                        <input type="radio" name="sexo" value="feminino">
-                                        <h2>Feminino</h2>                                        
-                                    </div><!--radio-->
-                                    <div class="clear"></div>
-                                </div><!--w100-->
-
-
-
-                                <div class="w100">
-                                    <input type="submit" name="acao" value="Cadastre-se">
-                                </div><!--w100-->
-
+                                    <div class="w100">
+                                        <h2>Data de nascimento</h2>                                                              
+                                                <select name="nascimento-dia" class="nascimento">
+                                                    <?php
+                                                        for($i = 1; $i <= 31; $i++){
+                                                    ?>
+                                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                                <select name="nascimento-mes" class="nascimento">
+                                                    <option value="0">Janeiro</option>
+                                                </select>
+                                                <select name="nascimento-ano" class="nascimento">
+                                                    <?php
+                                                        for($i = 1960; $i <= 2020; $i++){
+                                                    ?>
+                                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                        
+                                                <div class="clear"></div>
+                                            </div><!--w100-->
+                                            
+                                                <div class="w100">
+                                                    <div class="input-radio">
+                                                        <input type="radio" name="sexo" value="masculino">
+                                                        <h2>Masculino</h2>
+                                                    </div><!--radio-->
+                                                    <div class="input-radio">
+                                                        <input type="radio" name="sexo" value="feminino">
+                                                        <h2>Feminino</h2>                                        
+                                                    </div><!--radio-->
+                                                    <div class="clear"></div>
+                                                </div><!--w100-->
+                                                <div class="centralizador">
+                                                <div class="w100">                                    
+                                                    <input type="submit" name="acao" value="Cadastre-se">
+                                                </div><!--w100-->
+                                                </div><!--centralizador-->
+                                
                                 <div class="clear"></div>
                             </form><!--criar-conta-->
                         </div><!--abrir-conta-->
